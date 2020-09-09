@@ -10,7 +10,7 @@
   <title></title>
   
   <meta property="og:image" content="https://raw.githubusercontent.com/forgeFitnessUgym/bodyMeasureLINE/master/ForgeLogo%E5%A4%A7.png" />  
-  <meta property="og:title" content="打鐵健身 客戶資料" />
+  <meta property="og:title" content="客戶資料" />
   <meta property="og:description" content=""/>
    
   <meta name="msapplication-tap-highlight" content="no" />
@@ -52,7 +52,7 @@
     .km-on-ios .km-header .km-navbar
     /* for data-title=" " */
     {
-      background-color: black;
+      /* background-color: black;*/
       /* deeppink; */
       font-size: 18px;
     }
@@ -87,7 +87,7 @@
   </style>
 
   <div id="errorMessage" style="display: none; margin-top: 2em; color: red; font-weight: bold" align="center">
-    <h1 class="NotoSansFont" style="margin-top: 2em; color: red; font-weight: bold; text-align:center">打鐵健身-客戶資料</h1>
+    <h1 class="NotoSansFont" style="margin-top: 2em; color: red; font-weight: bold; text-align:center">客戶資料</h1>
   </div>
     
   <div id="forms" data-role="view" data-title="會員資料" data-init="initForm" data-use-native-scrolling="true" style="font-family: 'Noto Sans TC'">
@@ -100,7 +100,7 @@
 
 <!--    <div style="margin: 1em;" >* 表示必填欄位</div>-->
     <ul data-role="listview" data-style="inset">
-      <li>
+      <li style="display:none"> //demo 版不顯示
         <label class="km-label-above">預設常用健身房
           <select id="預設常用健身房" type="text" class="NotoSansFont">
           </select>
@@ -363,7 +363,10 @@
         "&Height="           + $("#formUserHeight").val()+
         "&Weight="           + $("#formUserWeight").val()+        
         "&EmergencyContact=" + $("#formUserEthnicity").val()+
-        "&EmergencyPhone="   + $("#預設常用健身房").val();       
+        //"&EmergencyPhone="   + $("#預設常用健身房").val(); 
+        
+        // demo 版
+        "&EmergencyPhone="   + "府中店";      
 
       console.log(paramToSend); 
 
@@ -456,7 +459,10 @@
         "&Height="           + $("#formUserHeight").val()+
         "&Weight="           + $("#formUserWeight").val()+        
         "&EmergencyContact=" + $("#formUserEthnicity").val()+
-        "&EmergencyPhone="   + $("#預設常用健身房").val();       
+        //"&EmergencyPhone="   + $("#預設常用健身房").val(); 
+        
+        // demo 版
+        "&EmergencyPhone="   + "府中店";       
 
       console.log(paramToSend); 
 
